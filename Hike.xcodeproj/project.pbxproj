@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD7B8C2B2C8BB36800C9C207 /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B8C2A2C8BB36800C9C207 /* CustomBackgroundView.swift */; };
+		CD7B8C2E2C8BB49400C9C207 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B8C2D2C8BB49400C9C207 /* ColorExtension.swift */; };
 		CDD9D53E2C8BAFEF009381F2 /* HikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9D53D2C8BAFEF009381F2 /* HikeApp.swift */; };
 		CDD9D5402C8BAFEF009381F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9D53F2C8BAFEF009381F2 /* ContentView.swift */; };
 		CDD9D5422C8BAFF2009381F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDD9D5412C8BAFF2009381F2 /* Assets.xcassets */; };
 		CDD9D5452C8BAFF2009381F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDD9D5442C8BAFF2009381F2 /* Preview Assets.xcassets */; };
+		CDD9D54C2C8BB197009381F2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9D54B2C8BB197009381F2 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD7B8C2A2C8BB36800C9C207 /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
+		CD7B8C2D2C8BB49400C9C207 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		CDD9D53A2C8BAFEF009381F2 /* Hike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD9D53D2C8BAFEF009381F2 /* HikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeApp.swift; sourceTree = "<group>"; };
 		CDD9D53F2C8BAFEF009381F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CDD9D5412C8BAFF2009381F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDD9D5442C8BAFF2009381F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CDD9D54B2C8BB197009381F2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD7B8C292C8BB33F00C9C207 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				CDD9D54B2C8BB197009381F2 /* CardView.swift */,
+				CD7B8C2A2C8BB36800C9C207 /* CustomBackgroundView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		CD7B8C2C2C8BB48400C9C207 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				CD7B8C2D2C8BB49400C9C207 /* ColorExtension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		CDD9D5312C8BAFEF009381F2 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +74,12 @@
 		CDD9D53C2C8BAFEF009381F2 /* Hike */ = {
 			isa = PBXGroup;
 			children = (
+				CD7B8C2C2C8BB48400C9C207 /* Utility */,
 				CDD9D53D2C8BAFEF009381F2 /* HikeApp.swift */,
 				CDD9D53F2C8BAFEF009381F2 /* ContentView.swift */,
 				CDD9D5412C8BAFF2009381F2 /* Assets.xcassets */,
 				CDD9D5432C8BAFF2009381F2 /* Preview Content */,
+				CD7B8C292C8BB33F00C9C207 /* Component */,
 			);
 			path = Hike;
 			sourceTree = "<group>";
@@ -138,7 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDD9D5402C8BAFEF009381F2 /* ContentView.swift in Sources */,
+				CDD9D54C2C8BB197009381F2 /* CardView.swift in Sources */,
 				CDD9D53E2C8BAFEF009381F2 /* HikeApp.swift in Sources */,
+				CD7B8C2B2C8BB36800C9C207 /* CustomBackgroundView.swift in Sources */,
+				CD7B8C2E2C8BB49400C9C207 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
