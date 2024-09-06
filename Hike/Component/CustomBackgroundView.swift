@@ -26,8 +26,8 @@ struct CustomBackgroundView: View {
             // MARK: - 1. Surface
             
             LinearGradient(colors: [
-                Color.customGreenLight,
-                Color.customGreenMedium
+                .customGreenLight,
+                .customGreenMedium
             ], startPoint: .top, endPoint: .bottom)
             .cornerRadius(40)
         }

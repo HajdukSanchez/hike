@@ -15,7 +15,7 @@ extension Color {
     static let customGreenDark = Color("ColorGreenDark")
     
     // MARK: - Custom Gray
-    static let customGrayDark = Color("ColorGrayDark")
+    static let customGrayMedium = Color("ColorGrayMedium")
     static let customGrayLight = Color("ColorGrayLight")
     
     // MARK: - Custom Indigo
