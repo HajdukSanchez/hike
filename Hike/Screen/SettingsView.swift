@@ -52,6 +52,25 @@ struct SettingsView: View {
                 .frame(maxWidth: .infinity)
             }
             .listRowSeparator(.hidden)
+            
+            Section {
+                CustomListRowView(label: "Application", icon: "apps.iphone", content: "Hike", tintColor: .blue)
+                CustomListRowView(label: "Compatibility", icon: "info.circle", content: "iOS, iPadOS", tintColor: .red)
+                CustomListRowView(label: "Technology", icon: "swift", content: "Swift", tintColor: .orange)
+                CustomListRowView(label: "Version", icon: "gear", content: "1.0", tintColor: .purple)
+                CustomListRowView(label: "Developer", icon: "ellipsis.curlybraces", content: "Jozek Hajduk", tintColor: .mint)
+                CustomListRowView(label: "Designer", icon: "paintpalette", content: "Robert Petras", tintColor: .pink)
+                CustomListRowView(label: "Website", icon: "globe", tintColor: .indigo, linkLabel: "hajduksanchez.com", linkUrl: "https://github.com/HajdukSanchez")
+            } header: {
+                Text("About the APP".uppercased())
+            } footer: {
+                HStack {
+                    Spacer()
+                    Text("Copyright © All right reserved.")
+                    Spacer()
+                }
+                .padding(.vertical, 8)
+            }
         }
     }
 }
