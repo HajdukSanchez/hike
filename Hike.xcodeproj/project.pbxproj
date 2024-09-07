@@ -101,11 +101,11 @@
 			isa = PBXGroup;
 			children = (
 				CD7B8C2C2C8BB48400C9C207 /* Utility */,
-				CDD9D53D2C8BAFEF009381F2 /* HikeApp.swift */,
 				CD7B8C372C8C8AE500C9C207 /* Screen */,
+				CD7B8C292C8BB33F00C9C207 /* Component */,
+				CDD9D53D2C8BAFEF009381F2 /* HikeApp.swift */,
 				CDD9D5412C8BAFF2009381F2 /* Assets.xcassets */,
 				CDD9D5432C8BAFF2009381F2 /* Preview Content */,
-				CD7B8C292C8BB33F00C9C207 /* Component */,
 			);
 			path = Hike;
 			sourceTree = "<group>";
