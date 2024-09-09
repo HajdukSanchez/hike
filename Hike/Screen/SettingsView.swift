@@ -8,6 +8,18 @@
 import SwiftUI
 
 struct SettingsView: View {
+    
+    // MARK: - Properties
+    
+    private let alternativeAppIcons: [String] = [
+        "AppIcon-Backpack",
+        "AppIcon-Camera",
+        "AppIcon-Campfire",
+        "AppIcon-MagnifyingGlass",
+        "AppIcon-Map",
+        "AppIcon-Mushroom"
+    ]
+    
     var body: some View {
         List {
             Section {
@@ -50,6 +62,42 @@ struct SettingsView: View {
                 .multilineTextAlignment(.center)
                 .padding(.bottom, 16)
                 .frame(maxWidth: .infinity)
+            }
+            .listRowSeparator(.hidden)
+            
+            Section {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 12) {
+                        ForEach(alternativeAppIcons, id: \.self) { item in
+                            Button(action: {
+                                // Method to change app icon
+                                UIApplication.shared.setAlternateIconName(item) { error in
+                                    if error != nil {
+                                        print("Error updating app icon \(item) - \(String(describing: error?.localizedDescription))")
+                                    } else {
+                                        print("Success updating app icon \(item)")
+                                    }
+                                }
+                            }, label: {
+                                Image("\(item)-Preview")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80, height: 80)
+                                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                            })
+                            .buttonStyle(BorderlessButtonStyle())
+                        }
+                    }
+                }
+                .padding(.top, 12)
+                Text("Choose your favorite app icon from the colletion above.")
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(.secondary)
+                    .font(.footnote)
+                    .padding(.bottom, 12)
+            } header: {
+                Text("Alternate Icons")
             }
             .listRowSeparator(.hidden)
             
